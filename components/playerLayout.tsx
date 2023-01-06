@@ -1,3 +1,4 @@
+import { Box } from "@chakra-ui/layout";
 import Sidebar from "./sidebar";
 
 export default function PlayerLayout({ children }) {

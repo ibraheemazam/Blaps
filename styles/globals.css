@@ -10,6 +10,10 @@
   --900: #212121;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /* PlayerLayout */
 .playerLayout {
   width: 100vw;
@@ -37,9 +41,110 @@
   bottom: 0;
   left: 0;
 }
+/* ---------------------- */
 
 /* Sidebar */
 .sidebar {
   width: 100%;
-  height: calc(100vh - 100px)
+  background: black;
+  height: calc(100vh - 100px);
+  padding: 0 5px 0 5px;
+  color: gray;
 }
+
+.sidebarContent {
+  padding: 20px 0 20px 0;
+  height: 100%;
+}
+
+.logoContainer {
+  width: 101px;
+  /* background: green; */
+  margin-bottom: 20px;
+  /* padding: 0 20px 0 20px; */
+}
+
+.menuDividerContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.menuDivider {
+  width: 90%;
+  height: 1px;
+  background: var(--600);
+  border: none;
+  margin: 20px 0 20px 0;
+}
+
+.playlistsContainer {
+  padding: 20px 0 20px 0;
+  height: 66%;
+  overflow-y: auto;
+  /* background: red; */
+}
+
+.playlistsContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.playlistsContainer:hover::-webkit-scrollbar {
+  display: block;
+  width: .5em;
+}
+
+.playlistsContainer:hover::-webkit-scrollbar-thumb {
+  background: var(--500);
+  border-radius: 3px;
+}
+
+.playlistItem {
+  padding: 10px 0;
+}
+/* ---------------------- */
+
+/* Menu */
+.navMenuContainer {
+  margin-bottom: 30px;
+}
+
+.menuItem {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.menuItem:hover {
+  background: var(--600);
+}
+
+.menuIcon {
+  margin-right: 20px;
+}
+/* ---------------------- */
+
+/* Linky */
+.linkOverlay {
+  display: flex;
+}
+
+/* look into how to select mulitple pseudo classes at once */
+.linkOverlay:link {
+  text-decoration: none;
+  color: gray;
+}
+
+.linkOverlay:visited {
+  text-decoration: none;
+  color: gray
+}
+
+.linkOverlay:hover {
+  text-decoration: none;
+  color: gray;
+}
+
+.linkOverlay:active {
+  text-decoration: none;
+  color: gray;
+}
+/* ---------------------- */
