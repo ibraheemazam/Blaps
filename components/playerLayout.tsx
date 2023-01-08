@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/layout";
+// import { Box } from "@chakra-ui/layout";
 import Sidebar from "./sidebar";
 
 export default function PlayerLayout({ children }) {
@@ -7,12 +7,8 @@ export default function PlayerLayout({ children }) {
       <div className="sideBarContainer">
         <Sidebar />
       </div>
-      <div className="contentBoxContainer">
-        {children}
-      </div>
-      <div className="bottomBarContainer">
-        bottomBar
-      </div>
+      <div className="contentBoxContainer">{children}</div>
+      <div className="bottomBarContainer">bottomBar</div>
     </div>
   );
 }

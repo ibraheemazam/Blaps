@@ -148,3 +148,44 @@
   color: gray;
 }
 /* ---------------------- */
+
+/* AuthForm */
+.authFormContainer {
+  height: 100vh;
+  width: 100vw;
+  background: black;
+  color: white;
+}
+
+.authFormContainer .navBar {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: white 1px solid;
+}
+
+.authFormContainer .main {
+  background: black;
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.authFormContainer .formContainer {
+  padding: 50px;
+  background: var(--800);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.authFormContainer button {
+  background: #55db55b9;
+}
+
+.authFormContainer button:hover {
+  background: hsla(120, 85%, 77%, 0.725);
+}
+/* ---------------------- */

@@ -3,11 +3,6 @@ import { IconContext } from "react-icons";
 import Image from "next/image";
 import NextLink from "next/link";
 import {
-  List,
-  ListItem,
-  ListIcon,
-  Divider,
-  Center,
   LinkBox,
   LinkOverlay,
 } from "@chakra-ui/layout";
