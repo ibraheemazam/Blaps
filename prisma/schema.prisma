@@ -24,8 +24,9 @@ model Artist {
   id        Int      @id @default(autoincrement())
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
-  genre     String
-  name      String
+  // genre     String
+  // using unique for now, but if connect to spotify api wont be all unique artist names
+  name      String   @unique
   songs     Song[]
 }
 
@@ -37,6 +38,8 @@ model Song {
   artist    Artist     @relation(fields: [artistId], references: [id])
   artistId  Int
   playlists Playlist[]
+  duration  Int
+  url       String
 }
 
 model Playlist {
@@ -45,6 +48,8 @@ model Playlist {
   updatedAt DateTime @updatedAt
   name      String
   songs     Song[]
-  User      User?    @relation(fields: [userId], references: [id])
-  userId    Int?
+  User      User     @relation(fields: [userId], references: [id])
+  userId    Int
 }
+
+//may need to add albums
